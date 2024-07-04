@@ -1,0 +1,415 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+a{
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 20px;
+    background-color: black;
+    align-items: center;
+    
+}
+.logo
+{
+    color: white;
+}
+.ulbar
+{
+display: flex;
+list-style: none;
+font-size: 15px;
+}
+.ulbar a{
+    color: antiquewhite;
+}
+
+ .ulbar li
+{
+padding: 5px;
+}
+.ulbar li a:hover
+{
+    color: chocolate;
+}
+.header
+{
+    background-image: url("/images/banner-bg.png");
+   background-size: contain;
+   background-repeat: no-repeat;
+   
+}
+
+.cont_header
+{
+    padding: 10%;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.cont_header h1 ,.cont_header h2
+{
+    font-size: 40px;
+    
+}
+.cont_header button ,.artical button 
+{
+    width: fit-content;
+    font-size: 7px;
+   padding: 10px 20px ;
+   border: none;
+   color: white;
+   font-weight: bold;
+   background-color: rgb(34, 32, 32);
+}
+.cont_header h1 , .cont_header p
+{
+    color: white;
+}
+.cont_header button:hover , .artical button:hover , .gallery button:hover
+{
+    background-color:chocolate ;
+    cursor: pointer;
+    
+}
+.aboutUs
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "artical image";
+    padding: 0px 10%;
+}
+.artical
+{
+    grid-area: artical;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about_Us , .gallery h1
+{
+    color: chocolate;
+    font-size: 30;
+    font-weight: bold;
+}
+.artical p{
+    font-size: 10px;
+}
+.image
+{
+    width: 100%;
+    grid-area: image;
+}
+.image img{
+    max-width: 100%;
+    height: auto;
+
+}
+.gallery
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery img:hover
+{
+    transform: scale(1.07);
+    transition: 0.5s;
+    box-shadow: 1px 1px 10px black;
+}
+.gallery h1
+{
+    width: fit-content;
+    margin: auto;
+}
+.gallery_section
+{
+    margin: 0px 10%;
+}
+.container_main
+{
+   padding: 15px;
+   
+}
+.container_main img{
+    display: block;
+   max-width: 100%;
+    height: 100%;
+    
+}
+.gallery button
+{
+   width:fit-content;
+    font-size: 7px;
+   padding: 10px 20px ;
+   border: none;
+   color: white;
+   font-weight: bold;
+   background-color: rgb(34, 32, 32);
+    margin: auto;
+}
+.services_title , .services_text
+{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.services{
+    width: 100%;
+    float: left;
+    background-image: url(../images/services-bg.png);
+    height: auto;
+    padding-bottom: 100px;
+    background-attachment: fixed;
+    margin:50px 0px;
+}
+.layout_padding
+{
+    padding-top: 90px;
+    padding-bottom: 0;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.services_cards
+{
+ 
+padding: 50px;
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.card-title
+{
+    font-size: 20px;
+}
+.card-text
+{
+    font-size: 10px;
+    
+}
+
+.card{
+    text-align: center;
+    padding: 10px 30px;
+    box-shadow: 0 0 18px -6px;
+    margin-top: 20px;
+    transition: 0.5s;
+   
+}
+.icon img{
+    width: 30px;
+    margin: 10px 0;
+}
+.hidden_btn
+{
+    width: 80%;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: flex;
+    display: none;
+    padding-bottom: 40px;
+   
+   
+}
+.card:hover
+{
+    background-color: chocolate;
+   
+}
+#card1:hover .hidden_btn1
+{
+   
+   display: block;
+   
+}
+.card2:hover .hidden_btn2
+{
+   display: block;
+}
+.card3:hover .hidden_btn3
+{
+   display: block;
+}
+.hidden_btn a
+{
+
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: #070603;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    text-transform: uppercase;
+
+}
+.testimonila
+{
+    background-color: white;
+   padding:50px 20%;
+  
+}
+.tetsti_title{
+    color: chocolate;
+    font-weight: bold;
+}
+.testi_text
+{
+    font-size: 12px;
+}
+.dinamc_div
+{
+    font-size: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.dinamc_div legend
+{
+    color: chocolate;
+    font-weight: bold;
+}
+.contact
+{
+    width: fit-content;
+   margin: auto;
+}
+.contact_title
+{
+    color: chocolate;
+    width: fit-content;
+    margin: auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+input
+{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+textarea
+{
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+
+}
+.submit_btn
+{
+    border: none;
+    width: fit-content;
+    margin: auto;
+    padding: 7px 25px;
+    font-size: 10px;
+    background-color: chocolate;
+    border-radius: 10px;
+    color: white; 
+}
+.submit_btn:hover
+{
+    background-color: white;
+    color: black;
+}
+input:focus , textarea:focus
+{
+   outline: none;
+}
+input::-webkit-input-placeholder , textarea::-webkit-input-placeholder
+{
+    font-size: 12px;
+}
+.container-fliud
+{
+padding: 10px 10px;
+}
+.contact_form 
+{
+    background-image: url(/images/img-9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    
+}
+.contact_form form{
+   
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.mapps
+{
+    font-size: 10px;
+}
+.footer
+{
+
+    background-color: black;
+    color: white;
+}
+.footer_content
+{
+    padding: 50px 15%;
+}
+.footer  a  {
+color: white;
+font-size: 10px;
+}
+.menu
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.menu a{
+   
+    width: max-content;
+}
+
+.contact1
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer h4{
+    font-weight: bold;
+    font-size: 15px;
+}
+.footer p {
+    font-size: 10px;
+   
+}
+.footer a:hover
+{
+    color: chocolate;
+}
+.useful_links p
+{
+width: min-content;
+}
